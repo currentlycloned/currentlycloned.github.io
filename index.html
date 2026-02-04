@@ -11,162 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #38bdf8;
-      --accent-2: #22c55e;
-    }
+  
+  <link rel="stylesheet" href="styles.css" />
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: linear-gradient(180deg, #020617, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      padding: 4rem 1.5rem 3rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 3rem;
-    }
-
-    nav .logo {
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      color: var(--muted);
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-
-    .hero .cta {
-      display: inline-block;
-      padding: 0.75rem 1.25rem;
-      background: var(--accent);
-      color: #020617;
-      border-radius: 0.5rem;
-      font-weight: 600;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 3.5rem 1.5rem;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .about p {
-      color: var(--muted);
-      max-width: 800px;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .project {
-      background: var(--panel);
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
-
-    .project h3 {
-      margin-bottom: 0.5rem;
-    }
-
-    .project p {
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    .project .tags {
-      font-size: 0.85rem;
-      color: var(--accent-2);
-    }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .skill {
-      background: var(--panel);
-      padding: 0.5rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.9rem;
-    }
-
-    .contact p {
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        gap: 1rem;
-      }
-    }
-  </style>
+  <!-- Swiper Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
   <header>
     <nav>
-      <div class="logo">YourName</div>
+      <div class="logo">ChloeGosselin</div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -196,25 +51,34 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
+
       <div class="project">
         <h3>Project Title</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/project1-1.png" alt="Project screenshot"></div>
+            <div class="swiper-slide"><img src="images/project1-2.png" alt="Project screenshot"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
         <p>Short description of the project and what problem it solves.</p>
+        <a href="https://github.com/yourname/project" target="_blank">View Project →</a>
         <div class="tags">HTML · CSS · JavaScript</div>
       </div>
 
-      <div class="project">
-        <h3>Another Project</h3>
-        <p>What you built, why you built it, and what you learned.</p>
-        <div class="tags">Unity · C# · Game Dev</div>
-      </div>
-
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>This website itself — clean, responsive, and fast.</p>
-        <div class="tags">Responsive · Accessibility</div>
-      </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
   <section id="skills">
     <h2>Skills</h2>
@@ -235,7 +99,7 @@
   </section>
 
   <footer>
-    © 2026 Your Name. All rights reserved.
+    © 2026 Chloe Gosselin. All rights reserved.
   </footer>
 
 </body>
