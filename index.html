@@ -3,104 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Portfolio website showcasing projects, skills, and contact information." />
+
+  <title>Chloë Gosselin | Portfolio</title>
+  <meta name="description" content="Portfolio of Chloë Gosselin – digital art, animation, and game development." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  
-  <link rel="stylesheet" href="styles.css" />
-
   <!-- Swiper Carousel -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <div class="logo">ChloeGosselin</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<header>
+  <nav>
+    <div class="logo">Chloë Gosselin</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="hero">
-      <h1>Hi, I'm Chloe Gosselin!</h1>
-      <p>
-        I'm a developer/designer who builds clean, user-focused experiences.
-        This site showcases my work, skills, and how to get in touch.
-      </p>
-      <a class="cta" href="#projects">View My Work</a>
-    </div>
-  </header>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
+  <div class="hero">
+    <h1>Hi, I’m Chloë 👋</h1>
     <p>
-      Write a short paragraph about who you are, what you do, and what you're
-      interested in. Keep it concise and human.
+      Bilingual multimedia creator with a passion for digital art, animation,
+      and game development. I love blending creativity with code to tell stories.
     </p>
-  </section>
+    <a class="cta" href="#projects">View My Work</a>
+  </div>
+</header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a bilingual creator based in Ottawa with a strong interest in multimedia
+    design, creative coding, and game development. I’ve been coding since early
+    high school and quickly fell in love with using code as a creative tool —
+    especially for games, interactive stories, and visual art.
+  </p>
+  <p>
+    My work spans digital illustration, animation, and programming, and I’m
+    especially drawn to projects that combine narrative, atmosphere, and
+    thoughtful design.
+  </p>
+</section>
 
-      <div class="project">
-        <h3>Project Title</h3>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/project1-1.png" alt="Project screenshot"></div>
-            <div class="swiper-slide"><img src="images/project1-2.png" alt="Project screenshot"></div>
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- TEXT RPG -->
+    <div class="project">
+      <h3>Orpheus’ Journey — Text RPG</h3>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/rpg-1.png" alt="Text RPG screenshot">
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <img src="images/rpg-2.png" alt="Text RPG screenshot">
+          </div>
         </div>
-        <p>Short description of the project and what problem it solves.</p>
-        <a href="https://github.com/yourname/project" target="_blank">View Project →</a>
-        <div class="tags">HTML · CSS · JavaScript</div>
+        <div class="swiper-pagination"></div>
       </div>
 
+      <p>
+        A narrative-driven text RPG built from scratch in Python.
+        Focused on branching dialogue, player choice, and long-form storytelling.
+      </p>
+
+      <a href="https://replit.com/@ChloeGosselin1/Orpheus-Journey-Text-RPG-Vps?v=1" target="_blank">
+        View on Replit →
+      </a>
+
+      <div class="tags">Python · Game Design · Narrative</div>
     </div>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper('.swiper', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
+    <!-- DIGITAL ART COLLECTION -->
+    <div class="project">
+      <h3>Digital Art — Environment & Perspective</h3>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Unity</div>
-      <div class="skill">C#</div>
-      <div class="skill">Git</div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/art-env-1.png" alt="Environment art">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/art-env-2.png" alt="Isometric room">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/art-env-3.png" alt="Fisheye perspective">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <p>
+        A collection of digital artworks exploring lighting, environment design,
+        and perspective techniques using Procreate.
+      </p>
+
+      <div class="tags">Digital Art · Procreate · Perspective</div>
     </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to work together or just say hi, feel free to reach out.</p>
-    <p>Email: <a href="mailto:youremail@example.com">chloegosselin09@gmail.com</a></p>
-  </section>
+    <!-- ANIMATION WALK CYCLE -->
+    <div class="project">
+      <h3>Animation — Walk Cycle</h3>
 
-  <footer>
-    © 2026 Chloe Gosselin. All rights reserved.
-  </footer>
+      <iframe
+        src="https://www.youtube.com/embed/Ls9rRuL-f54"
+        title="Walk Cycle Animation"
+        allowfullscreen>
+      </iframe>
+
+      <p>
+        A character walk cycle animation focused on motion realism, timing,
+        and background movement.
+      </p>
+
+      <div class="tags">Animation · Motion · Procreate</div>
+    </div>
+
+    <!-- ANIMATION MOVEMENT -->
+    <div class="project">
+      <h3>Animation — Movement Study</h3>
+
+      <iframe
+        src="https://www.youtube.com/embed/WhiXFdA0hMI"
+        title="Movement Animation"
+        allowfullscreen>
+      </iframe>
+
+      <p>
+        Dance animation inspired by figure skating footage,
+        created to study fluid motion and key poses.
+      </p>
+
+      <div class="tags">Animation · Movement · Study</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-columns">
+    <div>
+      <h4>Creative</h4>
+      <ul>
+        <li>Digital Illustration</li>
+        <li>Animation</li>
+        <li>Perspective Drawing</li>
+        <li>Visual Storytelling</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Technical</h4>
+      <ul>
+        <li>Python</li>
+        <li>Game Design</li>
+        <li>Creative Coding</li>
+        <li>HTML & CSS</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>
+    Interested in collaborating or learning more about my work?
+    Feel free to reach out.
+  </p>
+  <p>
+    Email:
+    <a href="mailto:chloegosselin09@gmail.com">
+      chloegosselin09@gmail.com
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Chloë Gosselin
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
 </body>
 </html>
